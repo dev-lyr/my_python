@@ -7,9 +7,9 @@
 - http://docs.oracle.com/javase/specs/index.html
 
 ## (3)Java编译器种类：
-- 前端编译器(例如:javac)：把*.java转变为.class文件的过程.
+- 前端编译器(例如:javac)：把.java转变为.class文件的过程.
 - 后端编译器(JIT，just in time)：把字节码变为机器码的过程，例如hotspot c1、c2编译器.
-- AOT编译器：直接把*.java变为机器码的过程，例如：ECJ.
+- AOT编译器：直接把.java变为机器码的过程，例如：ECJ.
 
 ## (4)备注：
 - Javac编译器是由java程序实现的.

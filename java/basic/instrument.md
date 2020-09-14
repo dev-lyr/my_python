@@ -18,7 +18,7 @@
 
 ## (3)使用方式2(在JVM启动后启动Agents):
 - Agent JAR文件必须包含属性Agent-Class, 值是agent类的名字.
-- Agent类必须实现一个public staitc agentmain方法.
+- Agent类必须实现一个public staitc agent main方法.
 - 系统类loader必须支持添加Agent JAR文件到系统类路径.
 
 ## (4)备注:
