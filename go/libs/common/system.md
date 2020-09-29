@@ -34,7 +34,6 @@
 # 三 syscall
 ## (1)概述:
 
-
 ## (2)备注:
 - https://godoc.org/golang.org/x/sys 
 
