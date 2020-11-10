@@ -29,7 +29,7 @@
 - 若两个对象调用equal不一致, 此时并不要求这两个对象的hash值一定不一样, 但最好不一样, 可以提高hash表的效率.
 
 ## (3)备注:
-- HashTable使用对象的hash值作为key, 在put和get元素时首先根据key的hash值找到候选对象, 然后调用==或对象的equal方法来最终确定是不是该对象.
+- 散列(hash)的集合使用对象的hash值作为key, 在put和get元素时首先根据key的hash值找到候选对象, 然后调用==或对象的equal方法来最终确定是不是该对象.
 - 若类覆盖了equal也要覆盖点hashCode.
 
 # 四 wait和notify和notifyAll：
