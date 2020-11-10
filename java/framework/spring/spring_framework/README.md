@@ -2,7 +2,7 @@
 ## (1)核心容器(core container)：
 - 核心容器包括：Core、Beans、Context和Expression Language modules.
 - Core和Bean提供Spring框架的基础部分，包括**控制反转(IoC)和依赖注入(DI)**.
-- Context模块是在Core和Beans的基础上，提供了一种使用框架类型访问对象的方法，继承了Beans模块的特性，并增加了对以下功能的支持：国际化、事件传递(event-programmatoc)、resource-loading等.
+- Context模块是在Core和Beans的基础上，提供了一种使用框架类型访问对象的方法，继承了Beans模块的特性，并增加了对以下功能的支持: 国际化、事件传递(event-programmatoc)、resource-loading等.
 
 ## (2)spring AOP模块：
 - 提供面向切面的编程方法.
@@ -36,7 +36,7 @@
 - 动态语言支持.
 - cache抽象
 
-# 二 控制反转(也称:依赖注入):
+# 二 控制反转(依赖注入):
 ## (1)背景:
 - A Java application — a loose term that runs the gamut from constrained, embedded applications to n-tier, server-side enterprise applications — typically consists of objects that collaborate to form the application proper. Thus the objects in an application have dependencies on each other.
 - Although the Java platform provides a wealth of application development functionality, it lacks the means to organize the basic building blocks into a coherent whole, leaving that task to architects and developers. Although you can use design patterns such as Factory, Abstract Factory, Builder, Decorator, and Service Locator to compose the various classes and object instances that make up an application, these patterns are simply that: best practices given a name, with a description of what the pattern does, where to apply it, the problems it addresses, and so forth. **Patterns are formalized best practices that you must implement yourself in your application.**

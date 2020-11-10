@@ -21,7 +21,7 @@
 # 三 Jetty配置(How And What)
 ## (1)启动配置：
 - ini文件：start.ini和start.d/&/ini文件.
-- mod文件：modules/*.mod文件，包含模块的定义.
+- mod文件：modules/.mod文件，包含模块的定义.
 - xml文件：etc目录.
 
 ## (2)其它配置文件：
