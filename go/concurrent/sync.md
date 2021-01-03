@@ -23,6 +23,7 @@
 ## (1)概述:
 - 是互斥锁, 一个Mutex的零值是一个unlocked Mutex.
 - 实现了Locker接口.
+- go没有可重入锁.
 
 ## (2)操作:
 - Lock

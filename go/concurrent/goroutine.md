@@ -1,4 +1,4 @@
-# 一 goroutine:
+# 一 概述:
 ## (1)概述:
 - 在go中每个并发执行的单元称为: **goroutine**, 当程序启动时, 之后一个goroutine来调用main函数, 称为主goroutine.
 - 新的goroutine通过go语句创建, **语法: go 方法/函数**.

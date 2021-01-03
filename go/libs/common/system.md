@@ -82,6 +82,10 @@
 ## (1)功能:
 - 提供时间相关的功能,例如:sleep等.
 
+## (2)函数:
+- Sleep
+- Tick
+
 # 六 path:
 ## (1)功能:
 - Package path implements utility routines for manipulating slash-separated paths.

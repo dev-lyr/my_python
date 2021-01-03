@@ -43,6 +43,12 @@
 
 ## (4)make:
 - 用来创建slice, map或channel类型, 返回该类型的值, 值以零值初始化.
+- make(T, n)       slice      slice of type T with length n and capacity n
+- make(T, n, m)    slice      slice of type T with length n and capacity m
+- make(T)          map        map of type T
+- make(T, n)       map        map of type T with initial space for approximately n elements
+- make(T)          channel    unbuffered channel of type T
+- make(T, n)       channel    buffered channel of type T, buffer size n
 
 ## (5)append和copy:
 - append: 添加0个或多个值到slice.

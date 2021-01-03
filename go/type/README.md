@@ -1,6 +1,6 @@
 # 一 概述:
 ## (1)类型:
-- 基本类型: 数字,字符串和布尔型.
+- 基本类型: 数值(numeric)类型,字符串和布尔型.
 - 聚合类型(aggregate type): array和struct.
 - 引用类型: point, slice, map, function和channel.
 - 接口类型
@@ -38,7 +38,7 @@
 ## (7)相关包:
 - sort
 
-# 二 整型:
+# 二 数值类型:
 ## (1)类型:
 - 有符号: int, int8, int16, int32, int64.
 - 无符号: uint, uint8, uint16, uint64

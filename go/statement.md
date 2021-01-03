@@ -88,11 +88,11 @@
 - 与switch类似, 但是所有case都是关于communication operations(send语句, 接收语句).
 
 ## (2)语法:
- -SelectStmt = "select" "{" { CommClause } "}" .
- -CommClause = CommCase ":" StatementList .
- -CommCase   = "case" ( SendStmt | RecvStmt ) | "default" .
- -RecvStmt   = [ ExpressionList "=" | IdentifierList ":=" ] RecvExpr .
- -RecvExpr   = Expression .
+- SelectStmt = "select" "{" { CommClause } "}" .
+- CommClause = CommCase ":" StatementList .
+- CommCase   = "case" ( SendStmt | RecvStmt ) | "default" .
+- RecvStmt   = [ ExpressionList "=" | IdentifierList ":=" ] RecvExpr .
+- RecvExpr   = Expression .
 
 ## (3)执行顺序:
 - For all the cases in the statement, the channel operands of receive operations and the channel and right-hand-side expressions of send statements are evaluated exactly once, in source order, upon entering the "select" statement. The result is a set of channels to receive from or send to, and the corresponding values to send. Any side effects in that evaluation will occur irrespective of which (if any) communication operation is selected to proceed. Expressions on the left-hand side of a RecvStmt with a short variable declaration or assignment are not yet evaluated.

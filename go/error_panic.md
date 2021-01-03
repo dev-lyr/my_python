@@ -1,8 +1,9 @@
-# 一 error类型:
+# 一 error:
 ## (1)概述:
 - Go预先声明一个**error**类型来一个错误条件, 其中nil表示没有错误.
 
-## (2)error接口
+## (2)error接口:
+- 只有一个Error方法, 返回值为string
 
 ## (3)相关方法:
 - errors.New 
