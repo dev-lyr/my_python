@@ -8,14 +8,28 @@
 
 ## (3)相关名词:
 - **module root**: 包含go.mod文件的目录.
-- **module path**: **import path** prefix corresponding to the module root, go.mod定义module path.
+- **module path**: **import path prefix** corresponding to the module root, go.mod定义module path.
 - **main module**: go命令执行的目录, go命令会从当前目录以及父目录来寻找go.mod.
 
 ## (4)备注:
-- GO111MODULE: off, on(module-aware), auto(默认). auto或unset, 则go基于当前的目录判断是否支持module, 若当前目录在$GOPATH/src之外且它自己包含go.mod文件或属于一个包含go.mod文件的目录下.
+- GO111MODULE: off, on(module-aware), auto(默认). auto或unset: 则go基于当前的目录判断是否支持module, 若当前目录在$GOPATH/src之外且它自己包含go.mod文件或属于一个包含go.mod文件的目录下则支持module.
 - GOPROXY=https://goproxy.io: 设置一个代理地址用于下载包.
 
-# 二 go.mod
+# 二 go.mod文件:
+## (1)概述:
+- go help go.mod
+- go command automatically updates go.mod each time it uses the module graph, to make sure go.mod always accurately reflects reality and is properly formatted.
+
+## (2)格式:
+- go mod每行有一个指令(directive), 指令由verb和参数组成.
+- comment格式//.
+
+## (3)verb类型:
+- **module**: 定义module path.
+- **go**: 设置期望的语言版本.
+- **require**: require a particular module at a given version or later.
+- **exclude**: exclude a particular module version from use.
+- **replace**: replace a module version with a different module version.
 
 # 三 go mod:
 ## (1)功能:
