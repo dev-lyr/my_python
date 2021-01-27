@@ -30,7 +30,13 @@
 - 若在defer函数中调用了recover函数, 且定义该defer函数的函数发生了panic异常, 则recover函数会使得程序从panic中恢复, 并返回panic值; 不会退出程序, 函数会从发生panic之处返回.
 - 若在其它任何情况下调用recover, 没有效果且返回nil.
 
-## (2)经验:
-- 要选择的使用recover, panic后不是所有情况都需要恢复; 可使用一个明确的,非导出类型作为panic值, 之后检查recover的返回值来判断, 若是再恢复, 若不是继续调用panic触发宕机.
+## (2)recover返回nil的情况:
+- panic参数为nil.
+- goroutine没有panic.
+- recover不是被一个defer函数直接调用.
+
+## (3)经验:
+- 要选择的使用recover, panic后不是所有情况都需要恢复.
+- 可使用一个明确的,非导出类型作为panic值, 之后检查recover的返回值来判断, 若是再恢复, 若不是继续调用panic触发宕机.
 - 同一包内发生的panic进行recover有助于简化复杂和未知的错误, 但不应该尝试去恢复其他包内发生的panic.
 

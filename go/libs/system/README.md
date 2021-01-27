@@ -85,7 +85,3 @@
 ## (2)函数:
 - Sleep
 - Tick
-
-# 六 path:
-## (1)功能:
-- Package path implements utility routines for manipulating slash-separated paths.
