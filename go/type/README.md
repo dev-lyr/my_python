@@ -60,15 +60,17 @@
 - unicode
 
 ## (3)类型转换:
-- bytes的slice-string: string([]byte{'h','e'})
-- string-byte的slice: []byte("hello")
+- bytes的slice->string: string([]byte{'h','e'})
+- string->byte的slice: []byte("hello")
 - 数字->string: fmt.Sprintf或strconv.XXX.
 - string->数字: strconv.XXX
-- strconv包.
 
 ## (4)strings:
 - Builder(struct): 用于高效构建字符串,减少内存复制.
 - Reader(struct): 实现io.Reader,io.ReaderAt,io.Seeker,io.WriteTo,io.ByteScanner和io.RuneScanner接口.
+
+## (5)相关包:
+- strconv包.
 
 # 四 浮点数
 - float32 

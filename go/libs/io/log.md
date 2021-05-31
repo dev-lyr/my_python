@@ -18,4 +18,4 @@
 
 # 三 klog:
 ## (1)概述:
-- https://godoc.org/k8s.io/klog
+- https://pkg.go.dev/k8s.io/klog/v2

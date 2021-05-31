@@ -34,7 +34,7 @@
 
 ## (3)Reader常用实现类:
 - File指针: os.Open返回.
-- strings.Reader: string.NewReaderc创建.
+- strings.Reader: string.NewReader创建.
 - net.Conn
 
 #  三 io/ioutil:

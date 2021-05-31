@@ -20,3 +20,6 @@
 ## (5)goroutine与线程:
 - 线程由kernel调度, go运行时有自己的调度器来调度Goroutine, 不需要进入内核态, 因此调度成本小很多.
 - 线程有特殊标识, 一个整数或指针, 可用于构建线程的局部存储; goroutine没有程序员可访问的标识, go鼓励影响函数的参数应当显式指定.
+
+## (6)相关:
+- https://golang.org/pkg/runtime/debug/#SetMaxThreads

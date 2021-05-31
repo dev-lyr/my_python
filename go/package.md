@@ -6,19 +6,17 @@
 - 名为main的包用来定义一个可执行程序, 而不是库.
 - **首字母大写的名称是被导出的, 导入包时候只能访问导出的名称.**
 
-## (2)包导入方式:
-- import "包"
-- import ("包1" "包2")
-- 备注: 第二种更常见, 在第二种中可以用空格来区分不同组织的包.
+## (2)import语法:
+- "import" ( ImportSpec | "(" { ImportSpec ";" } ")" )
+- ImportSpec = [ "." | PackageName ] ImportPath
+- 备注: 若不指定PackageName, 则默认为被导入包的package语句中的标识符.
 
 ## (3)使用方式:
-<pre><code>
-import   "lib/math": 常规, math.Sin.
-import m "lib/math": 别名, 避免两个同名包冲突, m.Sin.
-import . "lib/math": 省去包名直接使用,Sin.
-import _ "lib/math": 匿名导入(空导入), 不能访问包内的成员, 用于计算包级别初始化表达式和执行导入包的init函数情况时使用.
-import ../xxx或./xxx: 支持相对路径import.
-</code></pre>
+- import   "lib/math": 常规, math.Sin.
+- import m "lib/math": 别名, 避免两个同名包冲突, m.Sin.
+- import . "lib/math": 省去包名直接使用,Sin.
+- import _ "lib/math": 匿名导入(空导入), 不能访问包内的成员, 用于计算包级别初始化表达式和执行导入包的init函数情况时使用.
+- import ../xxx或./xxx: 支持相对路径import.
 
 ## (4)包种类:
 - 类型:标准库包和其它包.
@@ -33,13 +31,13 @@ import ../xxx或./xxx: 支持相对路径import.
 - dep
 - go vendor
 
-## (6)预留包名:
+## (7)预留包名:
 - main: 特殊的包, 用来定义一个独立的可执行程序而不是库.
 - std
 - cmd
 - all
 
-## (7)备注:
+## (8)备注:
 - 为了避免命名冲突以及方便查找, 除了标准库包以外, 其它的导入路径建议以互联网域名为路径开始.
 - go help packages
 

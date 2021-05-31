@@ -13,18 +13,16 @@
 
 # 二 expression:
 ## (1)常用:
-<pre><code>
--f file: file是一般文件.
--h/L file: file是符号链接.
--p file: file是管道
--S file: file是socket.
--r file: file是可读的.
--w file: file是可写的.
--x file: file是可执行的.
--s file: file不是空的.
--n string: string是非null.
-s1 = s2: 字符串s1等于s2
-s1 != s2: 字符串s1不等于s2
-n1 -eq n2: 整数n1等于n2
-n1 -ne n2: 整数n1不等于n2
-</pre></code>
+- -f file: file是一般文件.
+- -h/L file: file是符号链接.
+- -p file: file是管道
+- -S file: file是socket.
+- -r file: file是可读的.
+- -w file: file是可写的.
+- -x file: file是可执行的.
+- -s file: file不是空的.
+- -n string: string是非null.
+- s1 = s2: 字符串s1等于s2
+- s1 != s2: 字符串s1不等于s2
+- n1 -eq n2: 整数n1等于n2
+- n1 -ne n2: 整数n1不等于n2

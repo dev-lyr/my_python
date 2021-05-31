@@ -22,7 +22,8 @@
 
 ## (7)break语句:
 - 格式: `break [label]
-- 终止for, switch或select语句的执行.
+- 功能: 终止for, switch或select语句的执行.
+- If there is a label, it must be that of an enclosing "for", "switch", or "select" statement, and that is the one whose execution terminates.
 
 ## (8)continue语句:
 - 格式: `continue [label]
@@ -64,7 +65,7 @@
 - 默认分支会自动跳出, 除非指定fallthrough.
 
 ## (2)类型表达式:
-- 格式: switch x.(type){case type1:... case type2:...}
+- 格式: switch x.(type) {case type1:... case type2:...}
 - 所有case中的类型必须实现x的类型.
 
 ## (3)fallthrough语句:
@@ -84,7 +85,7 @@
 
 # 七 Select语句
 ## (1)功能:
-- A "select" statement chooses which of a set of possible send or receive operations will proceed.
+- A "select" statement chooses which of a set of possible **send or receive operations** will proceed.
 - 与switch类似, 但是所有case都是关于communication operations(send语句, 接收语句).
 
 ## (2)语法:
