@@ -2,7 +2,7 @@
 ## (1)概述:
 - Go内存模型指出在一个goroutine中读取一个变量时保证可以看到同一变量在其它goroutine中写入值的条件.
 - 程序修改的数据被其它goroutines并行访问时必须串行化访问.
-- 为了串行化访问, 可通过**channel操作**或**其他同步原语(例如:sync和sync/atomic)包来保护数据.
+- 为了串行化访问, 可通过**channel操作**或其他同步原语(例如:sync和sync/atomic)包来保护数据).
 
 ## (2)备注:
 - https://golang.org/ref/mem

@@ -69,7 +69,11 @@
 - Builder(struct): 用于高效构建字符串,减少内存复制.
 - Reader(struct): 实现io.Reader,io.ReaderAt,io.Seeker,io.WriteTo,io.ByteScanner和io.RuneScanner接口.
 
-## (5)相关包:
+## (5)bytes:
+- Reader
+- Buffer
+
+## (6)相关包:
 - strconv包.
 
 # 四 浮点数

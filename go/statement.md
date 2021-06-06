@@ -46,7 +46,12 @@
 - 三个语句可以为空, 但是;还是需要的, 除非只有一个条件语句.
 - for i<100: 省掉;号变成go版本的while.
 
-## (3)备注:
+## (3)range:
+- 语法: [ ExpressionList "=" | IdentifierList ":=" ] "range" Expression.
+- Expression的类型: 数组,指向数组的指针,slice,string,map或支持接收操作的channel.
+- channel类型返回1个元素, 其它的都返回2个
+
+## (4)备注:
 - go不支持前置++和--.
 - for {}: 死循环.
 
